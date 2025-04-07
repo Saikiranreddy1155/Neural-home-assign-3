@@ -1,0 +1,25 @@
+question1:
+output when latent dimension size is 16: the output images are different when compared to 32, the original imagw was same however the reconstructed image was blurry.
+output when latent dimension size is 64: the reconstructed images were more clarified than that of 16 and 32
+
+question2:
+A real-world scenario where denoising autoencoders can be useful is medical imaging, specifically in MRI (Magnetic Resonance Imaging) or CT scans.
+In medical imaging, images often suffer from noise due to various factors like motion artifacts, poor signal-to-noise ratio, or low-quality equipment. This noise can make it harder for doctors and medical professionals to accurately diagnose or analyze the images.
+A denoising autoencoder can be trained on clean and noisy image pairs, allowing it to learn how to remove the noise and reconstruct the image to its cleaner form. By applying the denoising autoencoder to noisy medical images, healthcare providers can obtain clearer, more accurate images, improving diagnostic accuracy and reducing the risk of misdiagnosis.
+In this context, denoising autoencoders help by:
+Improving image quality – reducing artifacts and noise.
+Enhancing medical decision-making – providing clearer visuals for better diagnosis.
+Speeding up analysis – cleaner images can be processed more efficiently, aiding in faster decision-making.
+
+question3:
+Temperature scaling is a technique used to control the randomness and creativity in text generation models, such as those based on neural networks. When generating text, models often output a probability distribution over possible next words or tokens. The temperature scaling parameter modifies this distribution to influence the model’s output.
+Effects of Temperature on Randomness:
+Low Temperature (T < 1): The text generation becomes more conservative and predictable. The model tends to repeat familiar patterns, sticking to high-probability tokens, and the output will generally be more factual or conventional.
+
+High Temperature (T > 1): The text generation becomes more random and creative. The model takes more risks in choosing less likely words, which can lead to more diverse, imaginative, or sometimes nonsensical results.
+Temperature scaling in text generation plays a key role in balancing randomness and predictability. By adjusting the temperature, you can control how creative or conservative the generated text will be. This technique is useful for applications where you want to either produce more coherent text (low temperature) or more imaginative and varied text (high temperature).
+
+question4:
+The precision-recall tradeoff is crucial in sentiment classification because it directly impacts how well a model can balance false positives and false negatives, which is especially important when the classes (e.g., positive and negative sentiment) are imbalanced or when the cost of mistakes varies.
+Why is the Precision-Recall Tradeoff Important in Sentiment Classification?
+In sentiment classification, especially with imbalanced datasets where negative sentiment (e.g., "neutral" or "negative" reviews) may outweigh positive sentiment, the model needs to strike a balance between precision and recall to avoid misclassifications that could lead to misleading conclusions. Here’s why it matters:The precision-recall tradeoff in sentiment classification is important because it determines how the model handles the balance between detecting positive sentiments (recall) and ensuring that those detected are truly positive (precision). Depending on the task, the consequences of false positives or false negatives will affect the choice of how to optimize the model, and this tradeoff directly influences the model's performance in real-world applications like product reviews, customer feedback, or social media sentiment analysis.
